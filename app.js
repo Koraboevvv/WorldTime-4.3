@@ -45,3 +45,34 @@ setInterval(() => {
 }, 1000)
 
 
+    const phoneNumber = document.querySelector(".phone-number")
+
+    const numbers = [
+        '+998 97 606 41 32',
+        '+998 90 720 42 15',
+        '+998 88 925 01 50',
+        '+998 90 924 46 46',
+        '+998 99 929 94 9   4',
+        '+998 88 818 88 88',
+        '+998 95 125 25 25',
+        '+998 95 574 74 74',
+        '+998 98 996 51 78',
+        '+998 90 009 90 00',
+        '+998 99 291 69 05',
+        '+998 90 743 21 50',
+        '+998 90 577 57 55',
+        '+998 90 000 01 00',
+        '+998 88 716 16 16'
+    ]
+
+
+function randomPhoneNumber () {
+    const interval = setInterval(()=>{
+        let randomNumber = Math.floor( Math.random() * numbers.length) 
+        phoneNumber.innerHTML = numbers[randomNumber]
+    }, 100)
+
+    setTimeout(() => {
+        clearInterval(interval)
+    },2500 )
+}
