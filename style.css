@@ -58,3 +58,28 @@ section{
 .btn:active{
     background: #f3d346;
 }
+
+
+.counter{
+    font-size: 14vw;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.increment,.reset{
+    font-size: 23px;
+    background: #f3d346;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.buttons{
+    display: flex;
+    gap: 90px;
+    
+}
