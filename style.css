@@ -1,0 +1,33 @@
+@font-face{
+    font-family: Time;
+    src: url("./fonts/digital-7.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Time;
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    color: #aaa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time{
+    font-family: Time;
+    font-size: 14vw;
+}
+
+.day,.date{
+    font-size: 22px;
+    letter-spacing: 2px;
+}
